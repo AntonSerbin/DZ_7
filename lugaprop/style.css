@@ -13,9 +13,9 @@ body  {
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 	text-align: left;
-	
 }
-.lgp #wrapper { 
+
+main { 
 	width: 960px;  
 	background-image:url(images/header-bg.png);
 	background-repeat:repeat-x;
@@ -24,103 +24,83 @@ body  {
 	background-color: #FFFFFF;
 	margin: 25px auto; 
 	border: 1px solid #000000;
-	text-align: left; 
 } 
-.lgp #header { 
+
+ header { 
 	height:120px;
 	float:left;
 	width:100%;
 	margin-bottom:40px;
+	clear: both;
 	
 } 
-.lgp #header h1 {
+header h1 {
 	margin: 0; 
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	height: 100px;
-	padding-top: 10px;
-	padding-right: 0;
-	padding-bottom: 10px;
-	padding-left: 0;
-	
+	padding: 0 10px;
 }
-#sidebar1 a {
-color:#000;
-}
-#sidebar1 a:hover {
-text-decoration:underline;
-font-size:14px;
-}
-.lgp #sidebar1 {
+
+
+nav {
 	float: left; 
 	width: 200px; 
 	padding: 15px 10px 15px 20px;
 }
-.lgp #sidebar1 ul  {
-	margin: 0px;
+ nav ul {
+/*	margin: 0px; - ниже указывается другой маржин*/
 	padding-left: 20px;
 	line-height: 150%;
 }
-.lgp #sidebar1 ul  li {
+nav ul  li {
 margin:10px 0;
 }
-.lgp #sidebar1 ul  li a {
+ nav ul  li a {
 	color:#000;
 	font-size:13px;
 	text-decoration:none;
 }
-.lgp #sidebar1 ul  li a:hover {
-	color:#000;
+ nav ul li a:hover {
+	/*color:#000; - повторяется*/
 	/* font-size:14px; */
 	text-decoration:underline;
 }
-.lgp #mainContent { 
+article { 
 	width:680px;
 	padding: 0 20px; 
 	float:right;
 } 
-.lgp #footer { 
+
+article img {width: 300px;}
+
+ footer { 
 	padding: 0 10px 0 20px; 
 	background:#DDDDDD; 
-	
 	height:90px;
-} 
-.lgp #footer p {
-	margin: 0; 
-	padding: 10px 0; 
-}
-.lgp #footer a {
-color:black;
-text-decoration:none;
-}
-.lgp #footer a :hover {
-color:black;
-text-decoration:underline;
+	float: left;
+	width: 930px;
 }
 
-.fltrt { 
-	float: right;
-	margin-left: 8px;
+ footer p {
+	margin: 0; 
+	padding: 10px 0; 
+	font-weight:bold; /*-перенес с хтмл*/
 }
-.fltlft { 
-	float: left;
-	margin-right: 8px;
+
+
+.clearfix:after {
+content: "";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
 }
-.clearfloat { 
-	clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
-}
-.lgp #wrapper #header img {
+
+main header img {
 	margin: 10px;
 }
-.logo {
-	margin: 10px;
-	float: left;
-	height: 100px;
-	width: 300px;
-}
+
 .contacts {
   width: 400px;
   height: 100px;
@@ -129,29 +109,63 @@ text-decoration:underline;
   line-height: 21px;
   font-size: 14px;
 }
+
 .logo {
 width:300px;
 height:100px;
 padding:10px;
-float:left;
+float:left;	
+margin: 10px;
 }
+
 h1 {
 	line-height:150%;
 }
-.bordered {
-	border-radius:10px;
-	border:5px solid #00698c;
-	content: '';
-	display: block;
-    margin: auto;
+
+/*nav a {
+color:#000;
 }
-.clearfix {
-	width:500px;
-	height:2px;
-	float:none;
+nav a:hover {
+text-decoration:underline;
+font-size:14px;
+} - дублируется */ 
+
+/*.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+*/
+
+/*.lgp footer a {
+color:black;
+text-decoration:none;
 }
 
-.en-markup-crop-options {
+.lgp footer a :hover {
+color:black;
+text-decoration:underline;
+}
+*/
+/*.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}*/
+
+
+	/*.bordered {
+		border-radius:10px;
+		border:5px solid #00698c;
+		content: '';
+		display: block;
+	    margin: auto;}
+*/
+/*.en-markup-crop-options {
     top: 18px !important;
     left: 50% !important;
     margin-left: -100px !important;
@@ -162,4 +176,4 @@ h1 {
 
 .en-markup-crop-options div div:first-of-type {
     margin-left: 0px !important;
-}
+}*/
